@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check anagram</title>
+</head>
+<body>
+    <h1>Open Console to see output</h1>
+    <script>
+       function Anagram(){
+
+        var  string1 = prompt("Enter First String");
+        var string2 = prompt("Enter Second String");
+
+        var firstString =  string1.split('').sort().join('').toLowerCase();
+        var secondString =  string2.split('').sort().join('').toLowerCase();
+
+        if(firstString===secondString){
+         console.log("This Strings is Anagram ");
+        
+        }else{
+         console.log("This Strings is not Anagram ! ");
+        }
+        }
+
+       Anagram();
+    </script>
+</body>
+</html>
